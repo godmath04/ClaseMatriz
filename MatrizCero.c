@@ -27,13 +27,25 @@ int main()
     // Cambio de 0 a 1
     for (int i = 0; i < fila; i++)
     {
-        for (int j = 0; i < columna; j++)
+        for (int j = 0; j < columna; j++)
         {
             if (i == j)
             {
                 Matriz[i][j] = 1;
             }
         }
+    }
+
+    printf("\n");
+    printf("Se mostrara la matriz con diagonal de 1.\n");
+    // Mostrar la matriz
+    for (int i = 0; i < fila; i++)
+    {
+        for (int j = 0; j < columna; j++)
+        {
+            printf("%4d |", Matriz[i][j]);
+        }
+        printf("\n");
     }
 
     return 0;
