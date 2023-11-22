@@ -24,7 +24,7 @@ int main()
         printf("\n");
     }
 
-    // Cambio de 0 a 1
+    // Cambio de 0 a 1 en la diagonal
     for (int i = 0; i < fila; i++)
     {
         for (int j = 0; j < columna; j++)
