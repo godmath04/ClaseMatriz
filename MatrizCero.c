@@ -1,5 +1,5 @@
 /* Realice una matriz inicializada en cero y que el usuario ingrese el tamaño de la matriz*/
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     // Tamaño de la matriz
@@ -9,9 +9,8 @@ int main()
     scanf("%d", &fila);
     printf("Ingrese la dimension de su columna: \n");
     scanf("%d", &columna);
-    
-    
-    // Matriz inicializada en cero 
+
+    // Matriz inicializada en cero
     int Matriz[fila][columna];
     for (int i = 0; i < fila; i++)
     {
@@ -23,8 +22,19 @@ int main()
             printf("%4d |", Matriz[i][j]);
         }
         printf("\n");
-        
     }
-    
+
+    // Cambio de 0 a 1
+    for (int i = 0; i < fila; i++)
+    {
+        for (int j = 0; i < columna; j++)
+        {
+            if (i == j)
+            {
+                Matriz[i][j] = 1;
+            }
+        }
+    }
+
     return 0;
 }
